@@ -100,28 +100,6 @@ public class Day3Test {
 
 
     @Test
-    public void countPossibleFabric() {
-        List<String> values = Arrays.asList(
-                "#1 @ 1,3: 4x4",
-                "#2 @ 3,1: 4x4",
-                "#3 @ 5,5: 2x2"
-        );
-
-        assertThat(service.countPossibleFabric(values)).isEqualTo(2);
-    }
-
-    @Test
-    public void countPossibleFabricOneBig() {
-        List<String> values = Arrays.asList(
-                "#1 @ 1,1: 10x10",
-                "#2 @ 3,1: 4x4",
-                "#3 @ 5,5: 2x2"
-        );
-        assertThat(service.countPossibleFabric(values)).isEqualTo(2);
-    }
-
-
-    @Test
     public void printSolution() {
         System.out.println(service.part1(readDay3()));
     }
